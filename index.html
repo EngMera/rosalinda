@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== SITE IMAGE SHORTCUT ===============-->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <!--==================== FONTAWESOME  ====================-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!--==================== SWIPER JS  ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS STYLE ==================-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <!--=============== SITE TITLE ==================-->
+    <title>Roselinda Store</title>
+</head>
+<body>
+     <!--=============== HEADER ==================-->
+     <header  class="header" id="header">
+            <div class="header1">
+                <div class="logo__pannel container " id="logo-pannel" >
+                    <div class="logo__btns" id="logo-btns">
+                        <div class="nav__shop" id="cart-shop">
+                            <i class="fa-solid fa-bag-shopping " ></i>
+                        </div>
+                       
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <a class="logo" href='index.html'id="logo">
+                        <img src="assets/img/logo.png" alt="Roselinda logo" class="logo__img" id="logo-img">
+                    </a>
+                    <div class="search__side">
+                        <div class="search" id="search">
+                            <input type="search" class="search__input" placeholder="   أبحثي هنا عما تحبية .." autocomplete >
+                            <button class="search__btn"type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <div class="nav__toggle" id="nav-toggle">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+        
+        
+        <nav class="nav  ">
+           <div class="nav__container container">
+            <div class="nav__menu  " id="nav-menu">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__link active-link">الرئيسية</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">وصل حديثاَ</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">تخفيضات</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">ملابس جاهزة</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">عبايات</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">قفاطين</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">فساتين </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">جمبسوت</a>
+                  </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+    
+               </div>
+           </div>
+
+        </nav>
+     </header>
+     <!--=============== CART ====================-->
+     <div class="cart" id="cart">
+        <div class="cart__close" id="cart-close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+
+        <h2 class="cart__title-center">السلة </h2>
+
+        <div class="cart__container">
+           
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured2.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">قفاطين </h3>
+                    <span class="cart__price">200ر.س</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+            </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured3.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">فساتين </h3>
+                    <span class="cart__price">250 ر.س</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="fa-solid fa-minus"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+            </article>
+            
+           
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">2 عناصر</span>
+            <span class="cart__prices-total">400 ر.س</span>
+        </div>
+    </div>
+     <!--=============== MAIN ====================-->
+     <Main class="main">
+        <!--=============== SLIDER SECTION ====================-->
+        <section class="slider section ">
+          <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div>
+                        <div class="slide__one">
+                            <h2 class="slide__title">
+                                ستايل مخصص <strong></br>لإطلالتك . . . </strong>
+                            </h2>
+                            <button class="bttns">
+                                أطلبيها الحين
+                            </button>
+                        </div>
+                        <img src="assets/img/slide1.jpg" alt="slide1">
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/slide2.jpg" alt="slide1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/slide3.jpg" alt="slide1">
+                </div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+        </section>
+        <!--=============== WHY WE'RE THE BEST  ====================-->
+        <section class=" section container ">
+          <div class="best">
+            <div class="best_title">
+                <h2 class=" section__title">
+                    لماذا نحن أفضل 
+                    <span></br>من غيرنا . . . ؟</span>
+                 </h2>
+                 
+            </div>
+            
+            <div class="flex">
+                <div class="icons__sec grid">
+                    <article class="icon__card flex  " id="icon-card">
+                        <img src="assets/img/icon1.svg">
+                        <h3>تصاميم مميزة </h3>
+        
+                    </article>
+                    <article class="icon__card flex" id="icon-card">
+                        <img src="assets/img/icon2.svg">
+                        <h3>الوان رائعة </h3>
+        
+                    </article>
+                    <article class="icon__card flex" id="icon-card">
+                        <img src="assets/img/icon3.svg">
+                        <h3>  ستايل حصري ومختلف  </h3>
+        
+                    </article>
+                </div>
+            </div>
+          </div>
+        </section>
+        <!--=============== FEAUTHERS  ====================-->
+        <section class="feauthers__section section">
+           <div class="container">
+            <h2 class="section__title">الأقسام</h2>
+            <div class="feauthers__container  flex">
+                
+                <div class="feauthers grid">
+                    <articale class="feauther__cart flex">
+                        <a href="#"><img class="feauther__img"src="assets/img/featured1.jpg" alt="عبايات"></a>
+                        <button class="feauther__title"><h2 >عبايات</h2></button>
+                    </articale>
+                    <articale class="feauther__cart flex">
+                        <a href="#"><img class="feauther__img"src="assets/img/featured2.jpg" alt="قفاطين">
+                        </a>
+                        <button class="feauther__title"><h2 >قفاطين</h2></button>
+                    </articale>
+                    <articale class="feauther__cart flex">
+                        <a href="#"><img class="feauther__img"src="assets/img/featured3.jpg" alt="فساتين">
+                        </a>
+                        <button class="feauther__title"><h2>فساتين </h2></button>
+                    </articale>
+                    <articale class="feauther__cart flex">
+                        <a href="#"><img class="feauther__img"src="assets/img/featured4.jpg" alt="جمبسوت">
+                        </a>
+                        <button class="feauther__title"><h2 >جمبسوت</h2></button>
+                    </articale>
+
+                </div>
+                <button class="bttns">
+                    أطلبيها الحين 
+                </button>
+            </div>
+           </div>
+        </section>
+        <!--=============== NEW ARRIVED  ====================-->
+         <section class="new__section section container  ">
+            <h2 class="section__title">
+                وصل حديثاً
+            </h2>
+                <div class="new__arraived  grid">
+                   <div class=" card flex">
+                     <div class="new__card ">
+                        <a href="#"><img src="assets/img/new1.jpg" alt="وصل حديثاً"></a>
+                        <div class="btns__icons">
+                            <div class="fav__icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="bag__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="card flex">
+                    <div class="new__card ">
+                        <a href="#"><img src="assets/img/new2.jpg" alt="وصل حديثاً"></a>
+                        <div class="btns__icons">
+                            <div class="fav__icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="bag__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                    <div class="card flex">
+                        <div class="new__card ">
+                            <a href="#"><img src="assets/img/new3.jpg" alt="وصل حديثاً"></a>
+                            <div class="btns__icons">
+                                <div class="fav__icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="bag__icon">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex">
+                        <div class="new__card ">
+                            <a href="#"><img src="assets/img/new4.jpg" alt="وصل حديثاً"></a>
+                            <div class="btns__icons">
+                                <div class="fav__icon">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                                <div class="bag__icon">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            
+         </section>
+        <!--=============== SALE BANNER  ====================-->
+        <section class="  section ">
+           <div class="sales__banner">
+            <div class="container sales__text">
+                <h2 ><strong>تخفيضات تصل </strong></h2>
+            <span><strong>الى 40%</strong></span>
+            </div>
+           </div>
+        </section>
+        <!--=============== SALE SECTION  ====================-->
+        <section class="sale_section section container">
+            <h2 class="section__title">
+                 تخفيضات
+            </h2>
+            <div class="sales grid ">
+
+                <div class="sale flex">
+                    <div class="sales__card">
+                        <a href="#"><img src="assets/img/sale1.jpg" alt="وصل حديثاً"></a>
+                        <div class="btns__icons">
+                            <div class="fav__icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="bag__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="sales__lable">تخفيض</div>  
+                        <h3>فستان دانتيل أحمر</h3>
+                    <span><strong> 90 </strong>ر . س  </span>           
+                    </div>
+                </div>
+                <div class="sale flex">
+                    <div class="sales__card">
+                        <a href="#"><img src="assets/img/sale2.jpg" alt="وصل حديثاً"></a>
+                        <div class="btns__icons">
+                            <div class="fav__icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="bag__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="sales__lable">تخفيض</div>  
+                        <h3>فستان مزموم دانتيل</h3>
+                    <span><strong> 120 </strong>ر . س  </span>           
+                    </div>
+                    
+                </div>
+                <div class="sale flex">
+                    <div class="sales__card">
+                        <a href="#"><img src="assets/img/sale3.jpg" alt="وصل حديثاً"></a>
+                        <div class="btns__icons">
+                            <div class="fav__icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="bag__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="sales__lable">تخفيض</div>  
+                        <h3>فستان شيفون مع دانتيل</h3>
+                    <span><strong> 130 </strong>ر . س  </span>           
+                    </div>
+                    
+                </div>
+               
+                <div class="sale flex">
+                    <div class="sales__card">
+                        <a href="#"><img src="assets/img/sale4.jpg" alt="وصل حديثاً"></a>
+                        <div class="btns__icons">
+                            <div class="fav__icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="bag__icon">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="sales__lable">تخفيض</div>  
+                        <h3>قطفان وردي فاتح   </h3>
+                    <span><strong> 100 </strong>ر . س  </span>           
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            
+        </section>
+        <!--=============== OUR STORY BANNER  ====================-->
+        <section class="our__story section">
+           <div class="story container grid">
+              <div class="ourstory__imgs">
+                <div class="story__two">
+                    <img src="assets/img/story2.jpg" alt="قصتنا">
+                    <img class="story__one" src="assets/img/story1.jpg" alt="قصتنا">
+                </div>
+                   
+              </div>
+              <div class="ourstory__text">
+                <h2 class="section__title">
+                    قصتنا 
+                </h2>
+                <p class="story__text">
+                    أخر وأحدث العبايات والفساتين لهذا العام ، متوفرة في مختلف العروض التقديمية في هذا المتجر ، اكتشفها الآن.
+                </p>
+                <button class="bttns">
+                    أطلبيها الحين 
+                </button>
+              </div>
+           </div>
+        </section>
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimon_swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                من أفضل العبايات والملابس خامتها مرة تجنن والوانها رووعه ..  وتعامل مرة سهل ويردون بسرعة .
+
+                            </p>
+                            <h3 class="testimonial__date">ابريل 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/test1.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">علاء عبدالله</span>
+                                    <span class="testimonial__perfil-detail">مدير الشركة</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                من أفضل العبايات والملابس خامتها مرة تجنن والوانها رووعه ..  وتعامل مرة سهل ويردون بسرعة .
+
+                            </p>
+                            <h3 class="testimonial__date">ابريل 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/test2.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">شيخة عبد العزيز</span>
+                                    <span class="testimonial__perfil-detail">مدير الشركة</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            <p class="testimonial__description">
+                                من أفضل العبايات والملابس خامتها مرة تجنن والوانها رووعه ..  وتعامل مرة سهل ويردون بسرعة .
+
+                            </p>
+                            <h3 class="testimonial__date">ابريل 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/test3.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">علي احمد</span>
+                                    <span class="testimonial__perfil-detail">مدير الشركة</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fa-solid fa-arrow-right"></i>                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/test.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services__sec section container grid">
+          <div class="service__card block">
+             <div class="icon__box flex">
+                <i class="fa-solid fa-truck-fast"></i>
+             </div>
+             <h3 class="service__title">
+                الشحن والتوصيل 
+             </h3>
+             <p>طلبك يوصلك خلال 5 - 10 ايام
+            </p>
+          </div>
+          <div class="service__card block">
+            <div class="icon__box flex">
+                <i class="fa-solid fa-money-bill-1-wave"></i>
+            </div>
+            <h3 class="service__title">
+               وسائل دفع آمنه  
+            </h3>
+            <p>تحويل بنكي - دفع عند الإستلام
+                - مدى - فيزا - ماستر كارد - ابل باي - STC pay
+                
+           </p>
+         </div>
+         <div class="service__card block">
+            <div class="icon__box flex">
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+            </div>
+            <h3 class="service__title">
+               الإستبدال والإسترجاع 
+            </h3>
+            <p>خلال ثلاثة أيام داخل السعودية
+
+           </p>
+         </div>
+
+
+        </section>
+
+     </Main>
+    
+     <!--==================== FOOTER ====================-->
+     <footer class="footer section ">
+        <div class="footer__container container grid">
+           
+            
+
+            <div class="footer__content   ">
+                <h3 class="footer__title">روابط مهمة</h3>
+
+                <ul class="footer__links ">
+                    <li>
+                        <a href="#" class="footer__link ">سياسة الخصوصية </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> من نحن</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link"> الشحن والتوصيل</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">  الشروط والاحكام</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">شروط الاستبدال والاسترجاع </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__content   ">
+                <h3 class="footer__title">حول</h3>
+
+                <ul class="footer__links ">
+                    <li>
+                        <a href="#" class="footer__link">مركز الدعم</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">دعم العملاء</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">حول</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content   ">
+                <h3 class="footer__title"> من نحن  </h3>
+
+                <div class="footer__list">
+                    <p>
+                     تسوق الان أحدث و أروع العطور العالمية فقط 
+                     مع ماجيك ستور .. عطور بروائح رائعة وباسعار مناسبه فقط معنا ذوقك واختياراتك علينا .. 
+                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__content  ">
+                <h3 class="footer__title">تواصل بنا</h3>
+
+                <ul class="footer__social ">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                       <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.snapchat.com/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="footer__social-link">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169;الحقوق محفوظة لدى روزليندا لأفضل الملابس والعبايات  2022</span>
+     </footer>
+     <!--=============== SCROLL UP ===============-->
+     <a href="#" class="scrollup" id="scroll-up"> 
+        <i class="fa-solid fa-arrow-up scrollup__icon"></i>
+    </a>
+     <!--=============== SWIPER JS ===============-->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+     <!--=============== FONTAWESOME JS ==============-->
+     <script src="assets/js/all.min.js"></script>
+     <!--=============== JAVASCRIPT ==============-->
+     <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
